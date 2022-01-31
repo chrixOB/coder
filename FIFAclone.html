@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA</title>
+<style>
+    .container{
+        margin: 10vh auto 0 auto;
+        max-width: 1000px;
+        border: 2px solid black;
+        height: 600px;
+    }
+    .one{
+        height:20%;
+        border: 1px solid blue;
+    }
+    .centre{
+        text-align: center;
+    }
+    .container-2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 475px;
+    }
+    .two{
+        border: 1px solid yellow;
+        height: 100%;
+    }
+    .container-3{
+        border: 1px solid green;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 475px;
+    }
+    .tri{
+        border: 1px solid black;
+        background: green;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="one" class="center">1</div>
+    
+        <div class="container-2" class="center">
+            <div class="two">2</div>
+
+            <div class="container-3">
+                <div class="tri">3</div>
+                <div class="tri">4</div>
+                <div class="tri">5</div>
+                <div class="tri">6</div>
+                <div class="tri">7</div>
+                <div class="tri">8</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
