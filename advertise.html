@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertise a product</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(rgba(5,5,5,0.8), rgba(5,5,5,0.8)), url(./keyboard.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background: gray;
+            width: 100%;
+            height: 60px;
+        }
+        .click{
+            padding: 20px 50px 20px 50px;
+        }
+        .click:hover{
+            background: rgb(20, 20, 20);
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            font-size: larger;
+
+        }
+        a:hover{
+            color: white;
+        }
+        .formdiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .formdiv .form fieldset button{
+            text-align: center;
+            margin-left: 50px;
+            border-radius: 10px;
+            width: 100px;
+            height: 50px;
+            color: white;
+            font-size: 1.5rem;
+            background: blue;
+            margin-top: 50px;
+
+        }
+        .formdiv .form fieldset{
+            height: 450px;
+            width: 500px;
+        }
+        .formdiv .form fieldset input{
+            height: 30px;
+        }
+        .formdiv .form fieldset .inner div{
+            align-items: center;
+            height: 50px;
+            font-size: 2rem;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+        .form{
+            color: white;
+            font-size: large;
+        }
+    </style>        
+</head>
+
+<body>
+    <nav>
+            <div class="click"><a href="home.html">Home</a></div>
+            <div class="click"><a href="shop.html">Shop</a></div>
+            <div class="click"><a href="advertise.html">Advertise</a></div>
+            <div class="click"><a href="explore.html">Explore</a></div>
+            <div class="click"><a href="about.html">About</a></div>
+        
+    </nav>
+    <div class="formdiv">
+       <form action="" method="" class="form">
+           <fieldset>
+               <legend><h1>sign up on buyandsell.com</h1></legend>
+               <div class="inner">
+               <div>name &nbsp; &nbsp; &nbsp;<input type="text" placeholder="enter your name"></div><br>
+               <div>item category&nbsp;
+               <select>
+                   <option>food</option>
+                   <option>clothing</option>
+                   <option>electronics</option>
+                   <option>furniture</option>
+                   <option>kitchen ware</option>
+               </select></div><br>
+               <div> contact &nbsp; &nbsp; &nbsp;<input type="text" value="+233"></div><br>
+               <div>e-mail address &nbsp; &nbsp; &nbsp;<input type="email" required></div><br>
+               <div><button value="reset">cancel</button>
+               <button value="submit">submit</button></div>
+               </div>
+               
+
+
+           </fieldset>
+        </form>
+    </div>
+</body>
+</html>

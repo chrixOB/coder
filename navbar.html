@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just a navbar</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        background-image: linear-gradient(to top left,rgba(30, 41, 46, 0.8), rgba(30,41,46,0.8)), url(./hotel-del-coronado-after-rain-mary-helmreich.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .nav{
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        height: 15vh;
+        background: linear-gradient(rgba(45,45,45,0.6), rgba(66,77,88,0.4));
+    }
+    .nav-div{
+        padding: 25px;
+        width: auto;
+        background: linear-gradient(rgba(45,45,45,0.6), rgba(66,77,88,0.4));
+    }
+    .nav-div:hover{
+        background: rgba(38, 184, 62, 0.6);
+    }
+    a{
+        text-transform: capitalize;
+        color: cornsilk;
+        font-size: xx-large;
+        text-decoration: none;
+    }
+    .nav-div li {
+        list-style-type: none;
+        text-decoration:none;
+    }
+    .footer{
+        
+        background: grey;
+        height: 45px;
+        text-align: center;
+        text-decoration: line-through;
+        font-size: x-large;
+        color:black;
+    }
+    
+    .h1{
+        text-transform: uppercase;
+        font-size: 5rem;
+        color: wheat;
+    }
+
+</style>
+
+<body>
+<div class="container">
+    <nav class="nav">
+        <div class="nav-div"><li><a href="#">home</a></li></div>
+        <div class="nav-div"><li><a href="#">bookings</a></li></div>
+        <div class="nav-div"><li><a href="#">explore</a></li></div>
+        <div class="nav-div"><li><a href="#">about</a></li></div>
+        <div class="nav-div"><li><a href="#">contact</a></li></div>
+    </nav>
+    <p>
+        <marquee><h1 class="h1">bayview royal hotel</h1></marquee>
+    </p>
+    <input type="text" id="n1" placeholder="enter first number"><br>
+    <input type="text" id="n2" placeholder="enter second number"><input type="button" value="add" onclick="add()"><br>
+    
+    
+    
+    
+</div> 
+<div class="footer">created by code monster&reg;</div>
+<script>
+    function add(){
+        let n1 = parseInt(document.getElementById("n1").value);
+        let n2 = parseInt(document.getElementById("n2").value);
+        var result = n1 + n2;
+       
+        alert("answer is"+ " " +result);
+
+    }
+</script>
+ 
+</body>
+</html>
